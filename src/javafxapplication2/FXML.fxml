@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="476.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="Click Me!" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <RadioButton id="rbRadio1" fx:id="rbRadio1" layoutX="208.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleRadioButton" text="Radio-1">
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="rbRadio2" fx:id="rbRadio2" layoutX="208.0" layoutY="112.0" mnemonicParsing="false" text="Radio-2" toggleGroup="$group1" />
+      <ComboBox id="comboBox1" fx:id="comboBox1" layoutX="101.0" layoutY="197.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>
