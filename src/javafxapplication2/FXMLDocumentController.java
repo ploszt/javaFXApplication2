@@ -70,6 +70,8 @@ public class FXMLDocumentController implements Initializable {
 //        System.out.println(comboBox1.getItems().toString());
 
         comboBox1.setPromptText("Válassz genya!");
+        System.out.println(comboBox1.getSelectionModel().getSelectedItem() + "-t valaxtottad! " + 
+                map1.get(comboBox1.getSelectionModel().getSelectedItem()).intValue());
     }    
 
     @FXML
