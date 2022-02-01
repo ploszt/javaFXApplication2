@@ -40,7 +40,6 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private ComboBox<String> comboBox1;
     
-   
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
@@ -49,7 +48,6 @@ public class FXMLDocumentController implements Initializable {
 
     Map<String, Integer> map1 = new HashMap<String, Integer>();
 
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -79,8 +77,6 @@ public class FXMLDocumentController implements Initializable {
         
 //        System.out.println(group1.getSelectedToggle().getToggleGroup().selectedToggleProperty().toString() );
         System.out.println( ((RadioButton)group1.getSelectedToggle()).getText() );
-        
-        
         
     }
 
