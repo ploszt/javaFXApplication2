@@ -81,7 +81,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void handleCBox(ActionEvent event) {
-        System.out.println(comboBox1.getSelectionModel().getSelectedItem() + "-t valaxtottad - " + 
+        System.out.println(comboBox1.getSelectionModel().getSelectedItem() + "-t valaxtottad! " + 
                 map1.get(comboBox1.getSelectionModel().getSelectedItem()).intValue());
     }
     
