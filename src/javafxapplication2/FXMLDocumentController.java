@@ -60,6 +60,9 @@ public class FXMLDocumentController implements Initializable {
         map1.put("Gyula", 28);
         map1.put("Julcsa", 38);
         
+        rbRadio1.setSelected(true);
+        System.out.println(rbRadio1.isSelected());
+        System.out.println(rbRadio2.isSelected());
         
 //        comboBox1.getItems().addAll("Jeno","Bela","Pesta","Gyula");
         comboBox1.getItems().addAll(map1.keySet());
