@@ -17,6 +17,6 @@
          </toggleGroup>
       </RadioButton>
       <RadioButton id="rbRadio2" fx:id="rbRadio2" layoutX="208.0" layoutY="112.0" mnemonicParsing="false" text="Radio-2" toggleGroup="$group1" />
-      <ComboBox id="comboBox1" fx:id="comboBox1" layoutX="101.0" layoutY="197.0" prefWidth="150.0" />
+      <ComboBox id="comboBox1" fx:id="comboBox1" layoutX="101.0" layoutY="197.0" onAction="#handleCBox" prefWidth="150.0" />
     </children>
 </AnchorPane>

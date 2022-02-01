@@ -46,21 +46,26 @@ public class FXMLDocumentController implements Initializable {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
     }
+
+    @FXML
+    Map<String, Integer> map1 = new HashMap<String, Integer>();
+
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         
-        Map<String, Integer> map1 = new HashMap<String, Integer>();
-        map1.put("Jenő", 18);
-        map1.put("Béla", 32);
-        map1.put("Estván", 19);
+        map1.put("Jeno", 18);
+        map1.put("Bela", 32);
+        map1.put("Estvan", 19);
         map1.put("Gyula", 28);
+        map1.put("Julcsa", 38);
         
         
 //        comboBox1.getItems().addAll("Jeno","Bela","Pesta","Gyula");
         comboBox1.getItems().addAll(map1.keySet());
-        System.out.println(comboBox1.getItems().toString());
+        comboBox1.getSelectionModel().select(0);
+//        System.out.println(comboBox1.getItems().toString());
 
         comboBox1.setPromptText("Válassz genya!");
     }    
@@ -72,6 +77,12 @@ public class FXMLDocumentController implements Initializable {
         
         
         
+    }
+
+    @FXML
+    private void handleCBox(ActionEvent event) {
+        System.out.println(comboBox1.getSelectionModel().getSelectedItem() + "-t valaxtottad - " + 
+                map1.get(comboBox1.getSelectionModel().getSelectedItem()).intValue());
     }
     
 }
