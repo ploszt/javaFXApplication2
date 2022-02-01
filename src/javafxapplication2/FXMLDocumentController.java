@@ -72,7 +72,8 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void handleRadioButton(ActionEvent event) {
         
-        System.out.println(group1.getSelectedToggle().getUserData().toString() );
+//        System.out.println(group1.getSelectedToggle().getToggleGroup().selectedToggleProperty().toString() );
+        System.out.println( ((RadioButton)group1.getSelectedToggle()).getText() );
         
         
         
