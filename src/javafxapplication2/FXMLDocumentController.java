@@ -47,7 +47,6 @@ public class FXMLDocumentController implements Initializable {
         label.setText("Hello World!");
     }
 
-    @FXML
     Map<String, Integer> map1 = new HashMap<String, Integer>();
 
     
@@ -73,7 +72,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void handleRadioButton(ActionEvent event) {
         
-        System.out.println(group1.selectedToggleProperty().getName());
+        System.out.println(group1.getSelectedToggle().getUserData().toString() );
         
         
         
