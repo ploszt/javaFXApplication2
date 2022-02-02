@@ -6,6 +6,8 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -25,5 +27,10 @@
             <Font name="Rockwell" size="24.0" />
          </font>
       </ToggleButton>
+      <ImageView id="kep1" fx:id="kep1" fitHeight="150.0" fitWidth="200.0" layoutX="59.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cimer3.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

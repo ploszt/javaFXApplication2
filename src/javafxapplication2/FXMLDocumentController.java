@@ -17,6 +17,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -39,6 +40,8 @@ public class FXMLDocumentController implements Initializable {
     private AnchorPane AnchorPane;
     @FXML
     private ComboBox<String> comboBox1;
+    @FXML
+    private ImageView kep1;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -51,6 +54,7 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        kep1.setVisible(true);
         
         map1.put("Jeno", 18);
         map1.put("Bela", 32);
